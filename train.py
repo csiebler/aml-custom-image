@@ -14,7 +14,6 @@ X = iris.data
 y = iris.target
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0)
 
-
 with mlflow.start_run():
     # Train model
     svm_model_linear = SVC(kernel='linear', C=1.0).fit(X_train, y_train)
