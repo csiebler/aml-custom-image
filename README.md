@@ -5,7 +5,7 @@ This repo shows how to use custom Docker image in Azure Machine Learning for mod
 
 First, build a custom image that contains all relevant libraries used by your Machine Learning code:
 
-```cli
+```console
 # Connect to Azure Container Registry
 az acr login --name <REGISTRY_NAME>
 docker login aml<REGISTRY_NAME>.azurecr.io
