@@ -1,0 +1,25 @@
+script: train-example/train.py
+arguments: []
+target: cpu-cluster
+framework: Python
+communicator: None
+nodeCount: 1
+environment:
+  environmentVariables:
+    EXAMPLE_ENV_VAR: EXAMPLE_VALUE
+  python:
+    userManagedDependencies: true
+    interpreterPath: python
+  docker:
+    enabled: true
+    baseImage: <REGISTRY_NAME>.azurecr.io/azureml-images/scikit-learn:0.23.2
+    arguments: []
+    sharedVolumes: true
+    shmSize: 2g
+    baseImageRegistry:
+      address: 
+      username: 
+      password: 
+      registryIdentity: 
+mpi:
+  processCountPerNode: 1
