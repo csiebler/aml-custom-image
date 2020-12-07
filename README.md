@@ -44,7 +44,7 @@ az ml run submit-script -c training -e custom-image-training
 
 ## Run training with custom image via Python
 
-Alternatively, you can run this example via `az ml` command line:
+Alternatively, you can run this example via the Python SDK:
 
 ```python
 from azureml.core import Workspace, Environment
