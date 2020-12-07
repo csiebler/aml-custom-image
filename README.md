@@ -38,7 +38,7 @@ Edit `training.runconfig` and update the `docker --> baseImage` to point to your
 Then kick off a training job using the [`az ml` CLI](https://docs.microsoft.com/en-us/azure/machine-learning/reference-azure-machine-learning-cli):
 
 ```console
-az ml folder attach -g aml-demo-we -w aml-demo-we
+az ml folder attach -g <RESOURCE_GROUP> -w <WORKSPACE>
 az ml run submit-script -c training -e custom-image-training
 ```
 
