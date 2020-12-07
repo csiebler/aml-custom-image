@@ -10,7 +10,7 @@ First, build a custom image that contains all relevant libraries used by your Ma
 ```console
 # Connect to Azure Container Registry
 az acr login --name <REGISTRY_NAME>
-docker login aml<REGISTRY_NAME>.azurecr.io
+docker login <REGISTRY_NAME>.azurecr.io
 
 # Build and push image locally
 docker build . -t <REGISTRY_NAME>.azurecr.io/azureml-images/scikit-learn:0.23.2
